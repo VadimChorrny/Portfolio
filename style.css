@@ -1,5 +1,10 @@
-.change{
-    color: lightblue;
-    font-size: 100px;
-    border: 1px solid black;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-hidden{
+    display: none;
 }

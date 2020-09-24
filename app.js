@@ -1,12 +1,10 @@
-const userList = document.querySelectorAll(".name-list li");
-const listInput = document.querySelector(".list-input");
-const addListBtn = document.querySelector(".addListBtn");
+const btn = document.querySelector('#button')
+const content = document.querySelector('#content')
 
-addListBtn.addEventListener('click', function () {
-    const newLi = document.createElement("LI");
-    const liContent = document.createTextNode(listInput.value);
-    newLi.appendChild(liContent);
-    userList.appendChild(newLi);
+btn.addEventListener('click', btnClick)
 
-});
+function btnClick() {
+    console.log(content.classList);
 
+    content.classList.toggle("content-hidden")
+}
